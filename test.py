@@ -1,9 +1,6 @@
-with open('csv_src/Basic.txt', 'r') as f:
-    basic_list = list()
-    for basic in f.readlines()[1:]:
-        basic_list.append(int(basic.rstrip()))
+from process_files import BaseFile, BasicCupcakes
 
-    total_basic_revenue = sum(basic_list) * 5
-
-print(basic_list)
-print(total_basic_revenue)
+basic_cupcake = BasicCupcakes(file_path='csv_src/Basic.txt', price=5)
+print(basic_cupcake.year_total_amount)
+print(basic_cupcake.month_total_amount)
+print(basic_cupcake.week_total_amount)

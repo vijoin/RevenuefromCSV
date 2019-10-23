@@ -3,3 +3,4 @@ ToDo.md
 main.py
 process_basic_csv.py
 venv/
+__pycache__/
